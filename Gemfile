@@ -44,3 +44,6 @@ gem 'haml'
 # Use bootstrap
 gem 'bootstrap-sass'
 
+# Use Flat-UI
+gem 'flat-ui-rails'
+
