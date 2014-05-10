@@ -3,7 +3,20 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'static_pages#index'
+  root 'static_pages#index'
+
+  #static_pages
+  get 'about' => 'static_pages#about'
+  get 'research' => 'static_pages#research'
+  get 'synthesis' => 'static_pages#synthesis'
+  get 'prototyping' => 'static_pages#prototyping'
+
+  # This line mounts Monologue's routes at the root of your application.
+  # This means, any requests to URLs such as /my-post, will go to Monologue::PostsController.
+  # If you would like to change where this engine is mounted, simply change the :at option to something different.
+  #
+  # We ask that you don't use the :as option here, as Monologue relies on it being the default of "monologue"
+  #mount Monologue::Engine, at: '/blog' # or whatever path, be it "/blog" or "/monologue"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
