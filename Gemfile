@@ -50,3 +50,10 @@ gem 'skrollr-rails'
 # Use Monologue for blogging
 # gem 'monologue'
 
+# Use jQuery UI
+gem 'jquery-ui-rails'
+
+#Use Font-Awesome
+gem "font-awesome-rails"
+
+

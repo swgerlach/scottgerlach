@@ -4,41 +4,170 @@
       #home
         #section-1
           .container
-            %h1 IxD
+            %h1
+              %span.title-italic Hello, I'm
+              %br
+              %span Scott
+              %span.title-italic.large W.
+              %span Gerlach
+            %h2
+              %span Interaction Designer
             %p
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere ac nisi a venenatis. Sed condimentum quam eget convallis tempor. Proin scelerisque tellus non nunc molestie, et pharetra risus congue. Nam malesuada, sem eu bibendum lobortis, tortor arcu vehicula orci, nec iaculis orci ipsum ut lorem. Morbi at ante in sem luctus aliquam. Pellentesque bibendum mauris eros. Ut tempus risus id magna dapibus sodales.
-        .container{'data-300'=>'opacity: 0.2', 'data-400'=>'opacity: .5', }
-          %p.tight
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere ac nisi a venenatis. Sed condimentum quam eget convallis tempor. Proin scelerisque tellus non nunc molestie, et pharetra risus congue. Nam malesuada, sem eu bibendum lobortis, tortor arcu vehicula orci, nec iaculis orci ipsum ut lorem. Morbi at ante in sem luctus aliquam. Pellentesque bibendum mauris eros. Ut tempus risus id magna dapibus sodales.
+              In short, I design products and services that convey value to the people who use them through their interactions.  I tend to think of well-designed interactions like a scaffold; they provide enough structure to guide but also leave plenty of room for each person to make their own meaning.
+          .circle
+            = fa_icon "angle-down 3x"
+        .container
+          .wrapper
+            %input.dial{type: "text", value: "75"}/
+            -#%p.tight
+              %img{src: '/assets/dewey.png'}
+              "Each experience is a moving force.  Its value can be judged only on the ground of what it moves toward and into.  Experience does not simply go inside a person.  Every genuine experience has an active side which changes in some degree the objective conditions under which experiences are had.  From the standpoint of growth as education and education as growth the question is whether growth in this direction promotes or retards growth in general.  Does this form of growth create conditions for further growth, or does it set up conditions that shut out the person who has grown in this particular direction from the occasions, stimuli, and opportunities for continuing growth in new directions?"
         #section-2
           .container
-            %h1 About
+            %h1
+              %span.title-italic Recently,
+              %br
+              %span.title-italic I graduated from
+              %br
+              %span.title-italic the
+              %span Austin
+              %br
+              %span Center
+              %span.title-italic for
+              %br
+              %span Design
             %p
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere ac nisi a venenatis. Sed condimentum quam eget convallis tempor. Proin scelerisque tellus non nunc molestie, et pharetra risus congue. Nam malesuada, sem eu bibendum lobortis, tortor arcu vehicula orci, nec iaculis orci ipsum ut lorem. Morbi at ante in sem luctus aliquam. Pellentesque bibendum mauris eros. Ut tempus risus id magna dapibus sodales.
-        .container{'data-1400'=>'opacity: 0.2', 'data-1500'=>'opacity: .5' }
-          %p.tight
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere ac nisi a venenatis. Sed condimentum quam eget convallis tempor. Proin scelerisque tellus non nunc molestie, et pharetra risus congue. Nam malesuada, sem eu bibendum lobortis, tortor arcu vehicula orci, nec iaculis orci ipsum ut lorem. Morbi at ante in sem luctus aliquam. Pellentesque bibendum mauris eros. Ut tempus risus id magna dapibus sodales.
+              For the last year I have been engaged in the Austin Center for Design's rigorous program in interaction design and social entrpreneurship that emphasizes creative problem sovling in the context of social issues.  My background in tutoring, mathematics, football strategy...
+          .circle
+            = fa_icon "angle-down 3x"
+        .container
+          .row
+            .col-lg-4
+              .icon-link
+                %img{class: 'svg', src:'assets/icons/svg/icon-microscope.svg'}
+                %h3
+                  Analysis
+            .col-lg-4
+              .icon-link
+                %img{class: 'svg', src:'assets/icons/svg/icon-microphone.svg'}
+                %h3
+                  Voice
+            .col-lg-4
+              .icon-link
+                %img{class: 'svg', src:'assets/icons/svg/icon-plants.svg'}
+                %h3
+                  Mentorship
         #section-3
           .container
-            %h1 Research
+            %h1
+              %span.title-italic Where I learned
+              %br
+              %span.title-italic a great deal about
+              %br
+              %span.title-italic conducting
+              %span Design
+              %br
+              %span Research...
             %p
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere ac nisi a venenatis. Sed condimentum quam eget convallis tempor. Proin scelerisque tellus non nunc molestie, et pharetra risus congue. Nam malesuada, sem eu bibendum lobortis, tortor arcu vehicula orci, nec iaculis orci ipsum ut lorem. Morbi at ante in sem luctus aliquam. Pellentesque bibendum mauris eros. Ut tempus risus id magna dapibus sodales.
-        .container{'data-2500'=>'opacity: 0.2', 'data-2700'=>'opacity: .5' }
-          %p.tight
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere ac nisi a venenatis. Sed condimentum quam eget convallis tempor. Proin scelerisque tellus non nunc molestie, et pharetra risus congue. Nam malesuada, sem eu bibendum lobortis, tortor arcu vehicula orci, nec iaculis orci ipsum ut lorem. Morbi at ante in sem luctus aliquam. Pellentesque bibendum mauris eros. Ut tempus risus id magna dapibus sodales.
+          .circle
+            = fa_icon "angle-down 3x"
+        #section-3-photo.photo
+          %img{src: '/assets/research-main.jpg'}
+          .credit-box
+            %p
+              Photo taken by Jacob Rader, 2013
+        .container
+          .row
+            .col-lg-4
+              .icon-link
+                %img{class: 'svg', src:'assets/icons/svg/icon-camera.svg'}
+                %h3
+                  Contextual Inquiry
+            .col-lg-4
+              .icon-link
+                %img{class: 'svg', src:'assets/icons/svg/icon-backpack.svg'}
+                %h3
+                  Embedding
+            .col-lg-4
+              .icon-link
+                %img{class: 'svg', src:'assets/icons/svg/icon-signpost.svg'}
+                %h3
+                  Interviews
         #section-4
           .container
-            %h1 Synthesis
+            %h1
+              %span.title-italic And creating
+              %br
+              %span.title-italic new ideas through a
+              %br
+              %span Process
+              %span.title-italic of
+              %span Synthesis
             %p
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere ac nisi a venenatis. Sed condimentum quam eget convallis tempor. Proin scelerisque tellus non nunc molestie, et pharetra risus congue. Nam malesuada, sem eu bibendum lobortis, tortor arcu vehicula orci, nec iaculis orci ipsum ut lorem. Morbi at ante in sem luctus aliquam. Pellentesque bibendum mauris eros. Ut tempus risus id magna dapibus sodales.
-        .container{'data-3500'=>'opacity: 0.2', 'data-3700'=>'opacity: .5' }
-          %p.tight
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere ac nisi a venenatis. Sed condimentum quam eget convallis tempor. Proin scelerisque tellus non nunc molestie, et pharetra risus congue. Nam malesuada, sem eu bibendum lobortis, tortor arcu vehicula orci, nec iaculis orci ipsum ut lorem. Morbi at ante in sem luctus aliquam. Pellentesque bibendum mauris eros. Ut tempus risus id magna dapibus sodales.
+          .circle
+            = fa_icon "angle-down 3x"
+        #section-4-photo.photo
+          %img{src: '/assets/synthesis-main.jpg'}
+          .credit-box
+            %p
+              Photo taken by Jacob Rader, 2013
+        .container
+          .row
+            .col-lg-4
+              .icon-link
+                %img{class: 'svg', src:'assets/icons/svg/icon-pushpin.svg'}
+                %h3
+                  Externalization
+            .col-lg-4
+              .icon-link
+                %img{class: 'svg', src:'assets/icons/svg/icon-book.svg'}
+                %h3
+                  Narrative
+            .col-lg-4
+              .icon-link
+                %img{class: 'svg', src:'assets/icons/svg/icon-lightbulb.svg'}
+                %h3
+                  Insight
         #section-5
           .container
-            %h1 Prototyping
+            %h1
+              %span.title-italic Resulting in creative arguments
+              %br
+              %span.title-italic articulated through
+              %br
+              %span Rapid
+              %span.title-italic.large, Iterative
+              %span Prototyping.
             %p
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere ac nisi a venenatis. Sed condimentum quam eget convallis tempor. Proin scelerisque tellus non nunc molestie, et pharetra risus congue. Nam malesuada, sem eu bibendum lobortis, tortor arcu vehicula orci, nec iaculis orci ipsum ut lorem. Morbi at ante in sem luctus aliquam. Pellentesque bibendum mauris eros. Ut tempus risus id magna dapibus sodales.
+          .circle
+            = fa_icon "angle-down 3x"
+        #section-5-photo.photo
+          %img{src: '/assets/prototyping-main.png'}
+        .container
+          .row
+            .col-lg-3
+              .icon-link
+                %img{class: 'svg', src:'assets/icons/svg/icon-pen.svg'}
+                %h3
+                  Sketching
+            .col-lg-3
+              .icon-link
+                %img{class: 'svg', src:'assets/icons/svg/icon-pinata.svg'}
+                %h3
+                  Creative Dialog
+            .col-lg-3
+              .icon-link
+                %img{class: 'svg', src:'assets/icons/svg/icon-testtubes.svg'}
+                %h3
+                  Testing & Feedback
+            .col-lg-3
+              .icon-link
+                %img{class: 'svg', src:'assets/icons/svg/icon-lightningbolt.svg'}
+                %h3
+                  Rapid Iteration
 
 
 

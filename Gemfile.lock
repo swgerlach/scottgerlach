@@ -40,6 +40,8 @@ GEM
     coffee-script-source (1.7.0)
     erubis (2.7.0)
     execjs (2.0.2)
+    font-awesome-rails (4.0.3.2)
+      railties (>= 3.2, < 5.0)
     haml (4.0.5)
       tilt
     hike (1.2.3)
@@ -50,6 +52,8 @@ GEM
     jquery-rails (3.1.0)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
+    jquery-ui-rails (4.2.1)
+      railties (>= 3.2.16)
     json (1.8.1)
     mail (2.5.4)
       mime-types (~> 1.16)
@@ -121,9 +125,11 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass
   coffee-rails (~> 4.0.0)
+  font-awesome-rails
   haml
   jbuilder (~> 2.0)
   jquery-rails
+  jquery-ui-rails
   rails (= 4.1.1)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
