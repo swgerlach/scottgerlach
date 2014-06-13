@@ -281,14 +281,13 @@ div[id^='section-prototyping']
     vertical-align: center
     -webkit-transition: 0s ease
     transition: 0s ease
-    overflow: hidden
     a
       height: 0px
       position: absolute
     img, svg
       position: absolute
     .note
-      display: inline
+      display: none
       opacity: 0
       font-size: .9em
       position: relative
@@ -329,9 +328,10 @@ div[id^='section-prototyping']
       background: -webkit-linear-gradient($black, $black) left center no-repeat
       background: linear-gradient($black, $black) left center no-repeat
       background-size: 4px 100%
-      overflow: visible
     &.active, &:hover, &:hover .note, &:hover .triangle
       opacity: 1
+    &:hover .note
+      display: inline
     &.active
       &.about-li
         background: -webkit-linear-gradient($blue, $blue) left center no-repeat
