@@ -2,17 +2,23 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 $green: #4be084
+$darkgreen: #4cbc77
 $plum: #55354a
+$lightplum: #b4428d
 $blue: #436ae1
 $brightblue: #557ffd
 $red: #EF4723
 $gray: #ebedec
+$medgray: #d2d4d3
 
 $fcolor-1: #edf0f7
 
 $bcolor-1: #b6c0ca
 $lightyellow: #f0efe0
-$brightyellow: #fdff38
+$brightyellow: #f0efe0
+//$brightyellow: #fdff38
+//$brightyellow: #2f323e
+$pink: #2f323e
 $yellow: #e4e62a
 $navy: #2f323e
 $black: #000
@@ -25,11 +31,20 @@ body
   background-color: #FFF
   font-family: 'Gentium Book Basic'
   p
-    font-size: 24px
+    font-size: 1.5em
+  *
+    -webkit-transition: .2s ease
+    transition: .2s ease
+  img
+    width: 100%
 
 h3
   font-style: italic
   font-weight: 800
+
+#header
+  height: 53px
+
 
 #home
 div[id^='section']
@@ -37,9 +52,9 @@ div[id^='section']
   text-shadow: 0 0 $fcolor-1
   padding: 200px 0px 50px
   p
-    font-size: 26px
+    font-size: 1.2em
     text-align: justify
-    padding: 0 40px
+    padding: 20px 40px
   h1
     font-family: 'Open Sans'
     font-weight: 800
@@ -50,20 +65,31 @@ div[id^='section']
     margin-bottom: 30px
     border-bottom: none
     span
-      font-size: 90px
+      font-size: 1.5em
       &.title-italic
         text-transform: none
         font-style: italic
         font: italic 400 60px/60px "Gentium Book Basic"
       &.large
-        font-size: 104px
+        font-size: 1.75em
   h2
+    text-shadow: inherit
     margin: 20px 40px 40px
     border-top: 1px solid
     font-family: 'Open Sans'
-    font-size: 28px
+    font-size: 1.625em
     text-transform: uppercase
     font-weight: 800
+    //  shadows render better in certain browsers than text
+    color: transparent
+    //  gradient background allows us to use css only & re-position it
+    background: -webkit-linear-gradient($black, $black) center -1px no-repeat
+    background: linear-gradient($black, $black) center -1px no-repeat
+    //  can precisely control size in relation to the text
+    background-size: 95% 1px
+    //  now the underline supports transitions
+    -webkit-transition: .5s ease
+    transition: .5s ease
     span
       position: relative
       top: -17px
@@ -74,21 +100,21 @@ div[id^='section']
     img
       z-index: 1
       width: 100%
-      &.spaced
-        margin: 10px 0
+
 
   .credit-box
     position: relative
     padding: 16px 0
     z-index: 4
     p
-      font-size: 16px
+      font-size: 1em
       text-align: left
       font-style: italic
       text-shadow: 0 0 #fff
       margin: 0
+      padding: 0 20px
     width: 340px
-    margin-top: -60px
+    margin-top: -64px
   .circle
     bottom: -87px
     position: relative
@@ -98,9 +124,11 @@ div[id^='section']
     width: 100px
     height: 100px
     background-color: inherit
+    z-index: 20
     .fa
       position: relative
       top: 46px
+
 div[id^='section-1']
   margin-top: 53px
   background: $brightyellow
@@ -109,11 +137,12 @@ div[id^='section-1']
     span
       background-color: $brightyellow
 div[id^='section-2']
-  background: $black
+  padding-top: 150px
+  background: $pink
   text-shadow: 0 0 #fff
   h2
     span
-      background-color: $black
+      background-color: $pink
 div[id^='section-3']
   background: $red
   text-shadow: 0 0 $black
@@ -132,160 +161,440 @@ div[id^='section-5']
   h2
     span
       background-color: $green
+
+div[id^='section-about']
+  background: $gray
+  text-shadow: 0 0 $navy
+  padding-bottom: 20px
+  h2
+    background: -webkit-linear-gradient($blue, $blue) center -1px no-repeat
+    background: linear-gradient($blue, $blue) center -1px no-repeat
+    background-size: 95% 1px
+    span
+      text-shadow: 0 0 $blue
+      background: $gray
+  p
+    text-align: left
+    font-size: 1.25em
+
 div[id^='section-research']
   background: $gray
   text-shadow: 0 0 $navy
   padding-bottom: 20px
   h2
+    background: -webkit-linear-gradient($red, $red) center -1px no-repeat
+    background: linear-gradient($red, $red) center -1px no-repeat
+    background-size: 95% 1px
     span
+      text-shadow: 0 0 $red
       background: $gray
   p
     text-align: left
-    font-size: 20px
+    font-size: 1.25em
+
+div[id^='section-synthesis']
+  background: $gray
+  text-shadow: 0 0 $navy
+  padding-bottom: 20px
+  h2
+    background: -webkit-linear-gradient($lightplum, $lightplum) center -1px no-repeat
+    background: linear-gradient($lightplum, $lightplum) center -1px no-repeat
+    background-size: 95% 1px
+    span
+      text-shadow: 0 0 $lightplum
+      background: $gray
+  p
+    text-align: left
+    font-size: 1.25em
+
+div[id^='section-prototyping']
+  background: $gray
+  text-shadow: 0 0 $navy
+  padding-bottom: 20px
+  h2
+    background: -webkit-linear-gradient($darkgreen, $darkgreen) center -1px no-repeat
+    background: linear-gradient($darkgreen, $darkgreen) center -1px no-repeat
+    background-size: 95% 1px
+    span
+      text-shadow: 0 0 $darkgreen
+      background: $gray
+  p
+    text-align: left
+    font-size: 1.25em
+
+#section-about-1
+  padding-bottom: 100px
+  background-color: $blue
+  p
+    text-align: justify
+    padding: 20px 0
 
 .tight
   font-family: 'Vollkorn'
   font-style: italic
-  padding: 30px 0
-  margin: 100px 25px 100px 175px
-  border-top: solid $bcolor-1 4px
-  border-bottom: solid $bcolor-1 4px
+  padding: 30px 20px
+  margin: 0
+  border-top: solid rgba(47, 50, 62, .5) 1px
+  border-bottom: solid rgba(47, 50, 62, .5) 1px
+  text-shadow: 0 0 $navy
   img
     float: left
     margin: -20px 15px 25px -175px
     width: 160px
-
+.spaced
+  margin: 15px 0
+.wide-spaced
+  margin: 40px 0
 .subpage-title
-  background-color: rgba(239, 71, 35, 1)
   text-shadow: 0 0 $navy
   padding: 100px 0
+  margin: 0
   h1
     margin: 0 0
     text-shadow: 0 0 $navy
+    font-family: 'Open Sans'
 .subpage-nav
-  float: left
-  margin-top: 123px
+  top: 53px
   position: fixed
-.nav-circle
-  margin: 0 auto
-  border-radius: 50%
-  width: 60px
-  height: 60px
-  opacity: .6
-  border: 10px $navy solid
-  margin: 20px
-  &:focus, &:hover
-    opacity: 1
+  width: 70px
+  background: rgba(235, 237, 236, .3)
+  z-index: 99
+  height: 100%
+  ul
+    padding: 0
+    margin-bottom: 0
+  img, svg
+    position: relative
+    float: left
+    clear: both
+    margin-left: -3px
+    width: 70px
+    height: 70px
+    &:focus, &:hover
+      opacity: 1
+  li
+    opacity: .5
+    height: 70px
+    width: 70px
+    padding: 0 4px
+    border-bottom: 1px solid rgba(0, 0, 0, .2)
+    vertical-align: center
+    -webkit-transition: 0s ease
+    transition: 0s ease
+    a
+      height: 0px
+      position: absolute
+    img, svg
+      position: absolute
+    .note
+      display: inline
+      opacity: 0
+      font-size: .9em
+      position: relative
+      text-shadow: 0 0 white
+      top: 20px
+      left: 115%
+      white-space: nowrap
+      background: $black
+      border-radius: 3px
+      padding: 5px 12px
+      .triangle
+        width: 6px
+        height: 6px
+        position: absolute
+        background: $black
+        border-top-right-radius: 30%
+        border-top-right-radius: 30%
+        left: -2px
+        top: 13px
+        &:before, &:after
+          width: 6px
+          height: 6px
+          position: absolute
+          background: $black
+          border-top-right-radius: 30%
+        &:before, &:after
+          content: ''
+          position: absolute
+        transform: rotate(90deg) skewX(-30deg) scale(1, 0.866)
+        -webkit-transform: rotate(90deg) skewX(-30deg) scale(1, 0.866)
+        &:before
+          transform: rotate(-135deg) skewX(-45deg) scale(1.414, 0.707) translate(0, -50%)
+          -webkit-transform: rotate(-135deg) skewX(-45deg) scale(1.414, 0.707) translate(0, -50%)
+        &:after
+          transform: rotate(135deg) skewY(-45deg) scale(0.707, 1.414) translate(50%)
+          -webkit-transform: rotate(135deg) skewY(-45deg) scale(0.707, 1.414) translate(50%)
+    &:hover
+      background: -webkit-linear-gradient($black, $black) left center no-repeat
+      background: linear-gradient($black, $black) left center no-repeat
+      background-size: 4px 100%
+    &.active, &:hover, &:hover .note, &:hover .triangle
+      opacity: 1
+    &.active
+      &.about-li
+        background: -webkit-linear-gradient($blue, $blue) left center no-repeat
+        background: linear-gradient($blue, $blue) left center no-repeat
+        background-size: 4px 100%
+      &.research-li
+        background: -webkit-linear-gradient($red, $red) left center no-repeat
+        background: linear-gradient($red, $red) left center no-repeat
+        background-size: 4px 100%
+      &.synthesis-li
+        background: -webkit-linear-gradient($lightplum, $lightplum) left center no-repeat
+        background: linear-gradient($lightplum, $lightplum) left center no-repeat
+        background-size: 4px 100%
+      &.prototyping-li
+        background: -webkit-linear-gradient($darkgreen, $darkgreen) left center no-repeat
+        background: linear-gradient($darkgreen, $darkgreen) left center no-repeat
+        background-size: 4px 100%
 
-.white-block
-  background: #fff
-  height: 500px
-  margin: 10px 0
-  padding: 40px 20px
+.box
+  text-align: center
+  padding: 50px
+  img
+    opacity: .3
+    max-width: 300px
+  &:hover img
+    opacity: .6
 
-.red-block
-  background: $red
-  height: 540px
-  margin: 10px 0
+#box-one
+  background-color: $blue
+#box-two
+  background-color: $red
+#box-three
+  background-color: $plum
+#box-four
+  background-color: $green
+
+
+#about-main
+  background: $gray
+  .mids
+    background: $blue
+
+#research-main
+  background: $gray
+  .mids
+    background: $red
+
+#synthesis-main
+  background: $gray
+  .mids
+    background: $plum
+    p.tight
+      text-shadow: 0 0 $gray
+      border-top: solid rgba(240, 239, 224, .5) 1px
+      border-bottom: solid rgba(240, 239, 224, .5) 1px
+
+#prototyping-main
+  background: $gray
+  .mids
+    background: $green
+
+#research-main, #synthesis-main, #prototyping-main, #about-main
+  .white-block
+    background: rgba(255, 255, 255, .5)
+    margin: 15px 0
+    padding: 40px 20px
+
+  div[id^='section'], div[id^='section'].photo
+    padding-left: 55px
+
+  .mids
+    margin: 100px 0 0 0
+    padding: 100px 0 100px 55px
+    &.subpage-title
+      margin: 53px 0 0 0
+
+
+.img-top-label
+  position: absolute
+  font-size: 1em
+  border-radius: 10px 10px 0 0
+  top: 16px
+  left: 52px
+  color: transparent
+  text-shadow: 0 0 white
+  font-family: 'Open Sans'
+
+.trans-block
+  background: none
+  margin: 15px 0
   padding: 40px 20px
+  text-shadow: 0 0 $navy
+  text-align: center
+  p
+    padding: 40px
+    border-top: 1px solid rgba(0,0,0,.1)
+    border-bottom: 1px solid rgba(0,0,0,.1)
+  h3
+    margin-top: 0
+
+.info-block
+  font-size: 20px
+  border-top: 1px solid rgba(0,0,0,.5)
+  padding: 20px 10px
+  margin-top: 40px
+  text-align: justify
+  color: transparent
+  text-shadow: 0 0 $navy
+
+
+.quote-block
+  margin-top: 80px
+  font-family: 'Vollkorn'
+  font-style: italic
+  color: transparent
+  text-shadow: 0 0 $navy
+  font-size: 22px
+  text-align: justify
+  a
+    margin-left: 10px
+    color: #BDC3C7
+    &:hover
+      color: #CACFD2
 
 .icon-link
   text-align: center
-  background: -webkit-linear-gradient($black, $black) center 88px no-repeat, -webkit-linear-gradient($black, $black) center 298px no-repeat
-  background: linear-gradient($black, $black) center 88px no-repeat, linear-gradient($black, $black) center 298px no-repeat
-  padding: 100px 60px 200px
+  background: -webkit-linear-gradient($black, $black) center 138px no-repeat, -webkit-linear-gradient($black, $black) center 348px no-repeat
+  background: linear-gradient($black, $black) center 138px no-repeat, linear-gradient($black, $black) center 348px no-repeat
+  padding: 150px 60px 100px
   background-size: 75% 1px
-  //  now the underline supports transitions
-  -webkit-transition: .2s ease
-  transition: .2s ease
-  img
+  img, svg
+    -webkit-transition: 0s ease
+    transition: 0s ease
     width: 180px
-    -webkit-transition: .2s ease
-    transition: .2s ease
+    height: 180px
   h3
-    font-size: 25px
+    font-size: 1.5em
     text-shadow: 0 0 $navy
     padding-top: 20px
-    -webkit-transition: .2s ease
-    transition: .2s ease
   &:hover
-    background: -webkit-linear-gradient($brightblue, $brightblue) center 88px no-repeat, -webkit-linear-gradient($brightblue, $brightblue) center 298px no-repeat
-    background: linear-gradient($brightblue, $brightblue) center 88px no-repeat, linear-gradient($brightblue, $brightblue) center 298px no-repeat
+    svg
+      fill: $brightblue
+    background: -webkit-linear-gradient($brightblue, $brightblue) center 138px no-repeat, -webkit-linear-gradient($brightblue, $brightblue) center 348px no-repeat
+    background: linear-gradient($brightblue, $brightblue) center 138px no-repeat, linear-gradient($brightblue, $brightblue) center 348px no-repeat
     background-size: 85% 1px
     h3
       //  backgrounds won't size larger than 100%
       text-shadow: 0 0 $brightblue
-    img
-      -webkit-filter: drop-shadow( 1px -1px 1px $brightblue )
-      filter: drop-shadow( 1px -1px 1px $brightblue )
-      fill: $brightblue
+
 
 .col-lg-3
   .icon-link
-    padding: 100px 40px 200px
+    padding: 150px 40px 100px
+.research
+  .icon-link:hover
+    background: -webkit-linear-gradient($red, $red) center 138px no-repeat, -webkit-linear-gradient($red, $red) center 348px no-repeat
+    background: linear-gradient($red, $red) center 138px no-repeat, linear-gradient($red, $red) center 348px no-repeat
+    background-size: 85% 1px
+    h3
+      //  backgrounds won't size larger than 100%
+      text-shadow: 0 0 $red
+    svg
+      fill: $red
 
+.synthesis
+  .icon-link:hover
+    background: -webkit-linear-gradient($lightplum, $lightplum) center 138px no-repeat, -webkit-linear-gradient($lightplum, $lightplum) center 348px no-repeat
+    background: linear-gradient($lightplum, $lightplum) center 138px no-repeat, linear-gradient($lightplum, $lightplum) center 348px no-repeat
+    background-size: 85% 1px
+    h3
+      //  backgrounds won't size larger than 100%
+      text-shadow: 0 0 $lightplum
+    svg
+      fill: $lightplum
 
-.pie
-  width: 200px
-  height: 200px
-  display: block
-  border-radius: 50%
-  float: left
-  padding: 20px
-  text-align: center
-  &.overfifty
-    background-image: linear-gradient(180deg, transparent 50%, green 50%), linear-gradient(180deg, green 50%, transparent 50%)
-  &.underfifty
-    background-image: linear-gradient(180deg, transparent 50%, green 50%), linear-gradient(180deg, green 50%, transparent 50%)
-.inner-pie
-  width: 150px
-  height: 150px
-  display: block
-  border-radius: 50%
-  //border: 16px solid green
-  padding: 20px
-  background: white
-  margin: 5px
+.prototyping
+  .icon-link:hover
+    background: -webkit-linear-gradient($darkgreen, $darkgreen) center 138px no-repeat, -webkit-linear-gradient($darkgreen, $darkgreen) center 348px no-repeat
+    background: linear-gradient($darkgreen, $darkgreen) center 138px no-repeat, linear-gradient($darkgreen, $darkgreen) center 348px no-repeat
+    background-size: 85% 1px
+    h3
+      //  backgrounds won't size larger than 100%
+      text-shadow: 0 0 $darkgreen
+    svg
+      fill: $darkgreen
 
 .wrapper
-  height: 300px
   padding: 100px
 
 .navbar-default
   background: rgba(255,255,255, .9)
   font-family: 'Open Sans'
 
-div[id^='section']
-  h2
-    //  shadows render better in certain browsers than text
-    color: transparent
-    letter-spacing: 10px
-    text-shadow: 0 0 $black, 0.08em 0 0 $brightyellow, 0 0, -0.08em 0 0 $brightyellow
-    //  gradient background allows us to use css only & re-position it
-    background: -webkit-linear-gradient($black, $black) center -1px no-repeat
-    background: linear-gradient($black, $black) center -1px no-repeat
-    //  can precisely control size in relation to the text
-    background-size: 85% 1px
-    //  now the underline supports transitions
-    -webkit-transition: .5s ease
-    transition: .5s ease
-    &:hover
-      //  backgrounds won't size larger than 100%
-      background-size: 95% 1px
+#swgerlach-logo, #ac4d-logo
+  margin-top: -20px
+
+#scott-presenting
+  margin: 10px 0 20px
+
+#alc-logo
+  margin-top: 20px
 
 
+#scott-cheyenne
+  margin-top: 87px
 
+#mag-img
+  margin: 30px 0 60px
+
+.center
+  margin: 0 auto
+  text-align: center
+
+#footer
+  display: none
 
 // flat-ui overwrites
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus
   color: $brightblue
   border-bottom: 5px solid
   margin-bottom: -5px
+
+.navbar-default .navbar-nav > li > a
+  -webkit-transition: 0s ease
+  transition: 0s ease
 .navbar-nav > li > a
-  font-size: 18px
+  font-size: 1.125em
   text-transform: uppercase
   font-weight: 800
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus
+  color: $navy
+
 .navbar-collapse .navbar-nav.navbar-left:first-child > li:first-child a
   border-radius: 0px
+
+.label-success
+  background-color: $green
+
+.label-danger
+  background-color: $plum
+
+.label-default
+  background-color: #989898
+
+.btn-inverse
+  background-color: $navy
+
+.btn-default
+  color: $blue
+  opacity: .9
+
+.btn
+  font-family: 'Open Sans'
+  font-weight: bold
+
+// media settings
+@media(max-width:767px)
+  div[id^='section']
+    h1
+      span
+        font-size: 1em
+        &.title-italic
+          font-size: 50px
+        &.large
+          font-size: 1.115em
 
 

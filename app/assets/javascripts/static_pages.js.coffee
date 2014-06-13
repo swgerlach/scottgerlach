@@ -2,54 +2,54 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
+jQuery ->
+  sections = {}
+  _height = $(window).height()
+  i = 0
 
-$ ->
+  # Grab positions of our sections
+  $(".anchor").each ->
+    sections[@id] = $(this).offset().top + 5
+    return
 
-  s = skrollr.init()
+  console.log(sections)
 
-  $("a[href*=#]:not([href=#])").click ->
-    if location.pathname.replace(/^\//, "") is @pathname.replace(/^\//, "") and location.hostname is @hostname
-      target = $(@hash)
-      target = (if target.length then target else $("[name=" + @hash.slice(1) + "]"))
-      if target.length
-        $("html,body").animate
-          scrollTop: target.offset().top
-        , 500
-        false
+  $(document).scroll ->
+    $this = $(this)
+    pos = $this.scrollTop()
+    $parent = {}
+    for i of sections
+      $parent = $("[id=\"" + i + "\"]")
+
+      #you now have a reference to a jQuery object that is the parent of this section
+      if sections[i] > pos and sections[i] < pos + _height
+        $(".subpage-nav li.active").removeClass "active"
+        $('[data-target="#' + i + '"]').addClass "active"
+
+    return
+
+  $this = $(this)
+  pos = $this.scrollTop()
+  $parent = {}
+  for i of sections
+    $parent = $("[id=\"" + i + "\"]")
+
+    #you now have a reference to a jQuery object that is the parent of this section
+    if sections[i] > pos and sections[i] < pos + _height
+      $(".subpage-nav li.active").removeClass "active"
+      $('[data-target="#' + i + '"]').addClass "active"
 
   return
 
-
-
-$(document).ready ->
-  myDelay = ->
-    m += 1
-    $(".dial").val(m).trigger "change"
-    window.clearInterval tmr  if m is 93
-    return
-  $(".dial").val(0).trigger("change").delay 200
-  $(".dial").knob
-    min: 0
-    max: 100
-    readOnly: true
-    width: 120
-    height: 120
-    fgColor: "#ccc"
-    dynamicDraw: true
-    thickness: 0.2
-    tickColorizeValues: true
-    skin: "tron"
-
-  tmr = self.setInterval(->
-    myDelay()
-    return
-  , 20)
-  m = 0
   return
 
+jQuery ->
+  $(".subpage-nav li").on 'click', ->
+    $(".subpage-nav li.active").removeClass "active"
+    $(this).addClass "active"
 
 
 
-
+  return
 
 

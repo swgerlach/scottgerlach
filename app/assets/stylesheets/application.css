@@ -14,6 +14,8 @@
  *= require font-awesome
  *= require fonts
  *= require flat-ui
+ *= require static_pages
+ *= require therm
  *= require_tree .
  *= require_self
  */

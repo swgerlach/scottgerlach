@@ -2,12 +2,18 @@
 %html
   %head
     %title Scottgerlach
+    :javascript
+      window.q=[];window.$=function(f){q.push(f)}
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
+    :javascript
+      $.each(q,function(index,f){$(f)});
+    %meta{'http-equiv'=>"cache-control", :content=>"no-cache"}
   %body
     = render '/layouts/topnav'
     = yield
+    = render '/layouts/footer'
     :javascript
       WebFontConfig = {
         google: { families: [ 'Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic:latin', 'Gentium+Book+Basic:400,400italic,700,700italic:latin', 'Vollkorn:400,400italic,700,700italic:latin' ] }

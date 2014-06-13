@@ -1,0 +1,122 @@
+#wrapper
+  .mid
+    .controls
+      .counter-clockwise.hover-light
+        %a{id: 'ccw-turn', class: 'fa fa-reply'}
+      .clockwise.hover-light
+        %a{id: 'cw-turn', class: 'fa fa-share'}
+    .outer-dial
+      .display
+        .overlay
+        .transition-circle
+        .menu-band
+          #menu
+            %img{ src: 'assets/menu.png' }
+          #menu-exit
+            %img{ src: 'assets/menu-exit.png'}
+          #menu-home
+            %img{ src: 'assets/menu-home.png'}
+          #menu-away
+            %img{ src: 'assets/menu-away.png'}
+          #menu-fan
+            %img{ src: 'assets/menu-fan.png'}
+        .temp-band
+        .temp-band-indicator
+          %img{ id: 'heat-cool', src: 'assets/heating-ind.png' }
+        .temp-band-range-home
+          .range-max-home
+            %p.text-shadow-gray
+            .bg-circle
+            %img.large-arc{ src: 'assets/large-arc.png' }
+            %img.small-arc{ src: 'assets/small-arc.png' }
+          .range-min-home
+            %p.text-shadow-gray
+            .bg-circle
+            %img.large-arc{ src: 'assets/large-arc.png' }
+            %img.small-arc{ src: 'assets/small-arc.png' }
+        .temp-band-range-away
+          .range-max-away
+            %p.text-shadow-gray
+            .bg-circle
+            %img.large-arc{ src: 'assets/large-arc.png' }
+            %img.small-arc{ src: 'assets/small-arc.png' }
+          .range-min-away
+            %p.text-shadow-gray
+            .bg-circle
+            %img.large-arc{ src: 'assets/large-arc.png' }
+            %img.small-arc{ src: 'assets/small-arc.png' }
+        .main-display
+          .humidity
+            %p 27%
+            %p HUM
+          .triangle-pointer
+            %img{ id: 'triangle-img', src: 'assets/triangle-gray.png' }
+          .desired-temp-wrapper
+            .desired-temp
+              72
+          .desired-temp-sub
+            CURRENT TEMP 72
+          .current-temp
+            72
+          .current-temp-sub
+            CURRENT TEMP
+          .fan
+            %img{ id: 'fan-small', src: 'assets/fan.png'}
+            %img{ id: 'fan-small-black', src: 'assets/fan-black-small.png'}
+        .home-menu
+          .exit-home
+            %p.text-shadow-gray EXIT
+            %img.large-arc{ src: 'assets/large-arc.png' }
+            %img.small-arc{ src: 'assets/small-arc.png' }
+        .home-display
+          #home-display-icon
+            %img{ src: 'assets/home-display-icon.png' }
+          #home-text
+            %p COMFORT RANGE
+            %p AT HOME
+
+        .away-menu
+          .exit-away
+            %p.text-shadow-gray EXIT
+            %img.large-arc{ src: 'assets/large-arc.png' }
+            %img.small-arc{ src: 'assets/small-arc.png' }
+        .away-display
+          .away-menu
+          #away-display-icon
+            %img{ src: 'assets/away-display-icon.png' }
+          #away-text
+            %p TEMP RANGE
+            %p AWAY
+        .fan-menu
+          .auto-fan
+            %img.gray{ src: 'assets/fan-auto.png'}
+            %img.black{ src: 'assets/fan-auto-black.png'}
+            %img.large-arc{ src: 'assets/large-arc.png' }
+            %img.small-arc{ src: 'assets/small-arc.png' }
+          .on-fan
+            %img.gray{ src: 'assets/fan-on.png'}
+            %img.black{ src: 'assets/fan-on-black.png'}
+            %img.large-arc{ src: 'assets/large-arc.png' }
+            %img.small-arc{ src: 'assets/small-arc.png' }
+          .off-fan
+            %img.gray{ src: 'assets/fan-off.png'}
+            %img.black{ src: 'assets/fan-off-black.png'}
+            %img.large-arc{ src: 'assets/large-arc.png' }
+            %img.small-arc{ src: 'assets/small-arc.png' }
+          .exit-fan
+            %img.gray{ src: 'assets/exit.png'}
+            %img.black{ src: 'assets/exit-black.png'}
+            %img.large-arc{ src: 'assets/large-arc.png' }
+            %img.small-arc{ src: 'assets/small-arc.png' }
+        .fan-display
+          #fan-display-icon
+            %img.gray-fan{ src: 'assets/fan-display-icon.png' }
+            %img.black-fan{ src: 'assets/fan-black.png'}
+          #fan-text
+            %p FAN
+            %p.fan-indicator AUTO
+        .bottom-notfication
+          %img{id:'press-for-menu', src: 'assets/press-for-menu.png' }
+          %img{id:'press-to-adjust', src: 'assets/press-to-adjust.png' }
+          %img{id:'press-to-confirm', src: 'assets/press-to-confirm.png' }
+  .sub

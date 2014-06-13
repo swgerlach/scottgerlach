@@ -13,9 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery.ui.all
-//= require turbolinks
+//= require jquery.transit.min
 //= require bootstrap
-//= require skrollr
-//= require skrollr.ie
 //= require svg
 //= require_tree .

@@ -1,4 +1,4 @@
-%nav.navbar.navbar-default.navbar-custom.navbar-fixed-top{role: "navigation"}
+%nav#header.navbar.navbar-default.navbar-custom.navbar-fixed-top{role: "navigation"}
   .container
     .navbar-header
       %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse", type: "button"}
@@ -10,14 +10,14 @@
         %img
     .collapse.navbar-collapse
       %ul.nav.navbar-nav.navbar-left
-        %li
+        %li{class: (current_path == root_path) ? 'active' : '' }
           %a.nav-link.current{href: root_path} Scott Gerlach
       %ul.nav.navbar-nav.navbar-right
-        %li
+        %li{class: (current_path == about_path) ? 'active' : '' }
           %a.nav-link{href: about_path} About
-        %li
+        %li{class: (current_path == research_path) ? 'active' : '' }
           %a.nav-link{href: research_path} Research
-        %li
+        %li{class: (current_path == synthesis_path) ? 'active' : '' }
           %a.nav-link{href: synthesis_path} Synthesis
-        %li
+        %li{class: (current_path == prototyping_path) ? 'active' : '' }
           %a.nav-link{href: prototyping_path} Prototyping

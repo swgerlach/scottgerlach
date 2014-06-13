@@ -4,108 +4,126 @@
       #home
         #section-1
           .container
-            %h1
-              %span.title-italic Hello, I'm
-              %br
-              %span Scott
-              %span.title-italic.large W.
-              %span Gerlach
-            %h2
-              %span Interaction Designer
-            %p
-              In short, I design products and services that convey value to the people who use them through their interactions.  I tend to think of well-designed interactions like a scaffold; they provide enough structure to guide but also leave plenty of room for each person to make their own meaning.
+            .col-lg-12
+              %h1
+                %span.title-italic Hello, I'm
+                %br
+                %span Scott
+                %span.title-italic.large W.
+                %span Gerlach
+              %h2
+                %span Interaction Designer
+              %p
+                I design products and services that convey value to the people who use them through their interactions.  I tend to think of well-designed interactions like a scaffold; they provide enough structure to guide but also leave plenty of room for each person to make their own meaning.
           .circle
             = fa_icon "angle-down 3x"
-        .container
-          .wrapper
-            %input.dial{type: "text", value: "75"}/
-            -#%p.tight
-              %img{src: '/assets/dewey.png'}
-              "Each experience is a moving force.  Its value can be judged only on the ground of what it moves toward and into.  Experience does not simply go inside a person.  Every genuine experience has an active side which changes in some degree the objective conditions under which experiences are had.  From the standpoint of growth as education and education as growth the question is whether growth in this direction promotes or retards growth in general.  Does this form of growth create conditions for further growth, or does it set up conditions that shut out the person who has grown in this particular direction from the occasions, stimuli, and opportunities for continuing growth in new directions?"
+        .row
+          .col-lg-3.col-sm-3#box-one.box
+            %a{ href: "https://twitter.com/scott_gerlach"}
+              %img{src: 'assets/social-icons/twitter.png'}
+          .col-lg-3.col-sm-3#box-two.box
+            %a{ href: "https://github.com/swgerlach"}
+              %img{src: 'assets/social-icons/github.png'}
+          .col-lg-3.col-sm-3#box-three.box
+            %a{ href: "https://www.linkedin.com/pub/scott-gerlach/95/29/b3b"}
+              %img{src: 'assets/social-icons/linkedin.png'}
+          .col-lg-3.col-sm-3#box-four.box
+            %a{ href: "https://vimeo.com/longhornscott"}
+              %img{src: 'assets/social-icons/vimeo.png'}
+
         #section-2
           .container
-            %h1
-              %span.title-italic Recently,
-              %br
-              %span.title-italic I graduated from
-              %br
-              %span.title-italic the
-              %span Austin
-              %br
-              %span Center
-              %span.title-italic for
-              %br
-              %span Design
-            %p
-              For the last year I have been engaged in the Austin Center for Design's rigorous program in interaction design and social entrpreneurship that emphasizes creative problem sovling in the context of social issues.  My background in tutoring, mathematics, football strategy...
+            .col-lg-12
+              %h1
+                %span.title-italic Recently,
+                %br
+                %span.title-italic I graduated from
+                %br
+                %span.title-italic the
+                %span Austin
+                %br
+                %span Center
+                %span.title-italic for
+                %br
+                %span Design
+              %p
+                For the last year I have been engaged in the Austin Center for Design's rigorous program in interaction design and social entrpreneurship that emphasizes creative problem sovling in the context of social issues.  At AC4D, it was obvious that my background in tutoring, mathematics, and blogging all play an important role in how I approach design.
           .circle
             = fa_icon "angle-down 3x"
         .container
           .row
             .col-lg-4
               .icon-link
-                %img{class: 'svg', src:'assets/icons/svg/icon-microscope.svg'}
-                %h3
-                  Analysis
-            .col-lg-4
-              .icon-link
-                %img{class: 'svg', src:'assets/icons/svg/icon-microphone.svg'}
+                %a{ href: about_path(anchor: 'section-about-2')}
+                  %img{class: 'svg', src:'assets/icons/svg/icon-microphone.svg'}
                 %h3
                   Voice
             .col-lg-4
               .icon-link
-                %img{class: 'svg', src:'assets/icons/svg/icon-plants.svg'}
+                %a{ href: about_path(anchor: 'section-about-3')}
+                  %img{class: 'svg', src:'assets/icons/svg/icon-microscope.svg'}
+                %h3
+                  Analysis
+            .col-lg-4
+              .icon-link
+                %a{ href: about_path(anchor: 'section-about-4')}
+                  %img{class: 'svg', src:'assets/icons/svg/icon-plants.svg'}
                 %h3
                   Mentorship
         #section-3
           .container
-            %h1
-              %span.title-italic Where I learned
-              %br
-              %span.title-italic a great deal about
-              %br
-              %span.title-italic conducting
-              %span Design
-              %br
-              %span Research...
-            %p
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere ac nisi a venenatis. Sed condimentum quam eget convallis tempor. Proin scelerisque tellus non nunc molestie, et pharetra risus congue. Nam malesuada, sem eu bibendum lobortis, tortor arcu vehicula orci, nec iaculis orci ipsum ut lorem. Morbi at ante in sem luctus aliquam. Pellentesque bibendum mauris eros. Ut tempus risus id magna dapibus sodales.
+            .col-lg-12
+              %h1
+                %span.title-italic Where I learned
+                %br
+                %span.title-italic a great deal about
+                %br
+                %span.title-italic conducting
+                %span Design
+                %br
+                %span Research...
+              %p
+                I believe that qualitative research plays a vital role in informing a designer’s intuition and provoking new ideas. I have repeatedly experienced that by putting myself in context and learning directly from people who are affected by a problem, I build full, rich relationships with many different aspects of a problem space very quickly. And these new mental models quickly lead to new connections and new insights into behavior.  Not surprisingly, design ideas that result from this sort of contextual, qualitative research stand a much better chance of being appropriate and making an impact because they are anchored in relevant, first hand experience.
           .circle
             = fa_icon "angle-down 3x"
         #section-3-photo.photo
-          %img{src: '/assets/research-main.jpg'}
+          %img{src: '/assets/research-main-crop.jpg'}
           .credit-box
             %p
               Photo taken by Jacob Rader, 2013
         .container
-          .row
+          .row.research
             .col-lg-4
               .icon-link
-                %img{class: 'svg', src:'assets/icons/svg/icon-camera.svg'}
+                %a{ href: research_path(anchor: 'section-research-1')}
+                  %img{class: 'svg', src:'assets/icons/svg/icon-camera.svg'}
                 %h3
                   Contextual Inquiry
             .col-lg-4
               .icon-link
-                %img{class: 'svg', src:'assets/icons/svg/icon-backpack.svg'}
+                %a{ href: research_path(anchor: 'section-research-2')}
+                  %img{class: 'svg', src:'assets/icons/svg/icon-backpack.svg'}
                 %h3
                   Embedding
             .col-lg-4
               .icon-link
-                %img{class: 'svg', src:'assets/icons/svg/icon-signpost.svg'}
+                %a{ href: research_path(anchor: 'section-research-3')}
+                  %img{class: 'svg', src:'assets/icons/svg/icon-signpost.svg'}
                 %h3
                   Interviews
         #section-4
           .container
-            %h1
-              %span.title-italic And creating
-              %br
-              %span.title-italic new ideas through a
-              %br
-              %span Process
-              %span.title-italic of
-              %span Synthesis
-            %p
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere ac nisi a venenatis. Sed condimentum quam eget convallis tempor. Proin scelerisque tellus non nunc molestie, et pharetra risus congue. Nam malesuada, sem eu bibendum lobortis, tortor arcu vehicula orci, nec iaculis orci ipsum ut lorem. Morbi at ante in sem luctus aliquam. Pellentesque bibendum mauris eros. Ut tempus risus id magna dapibus sodales.
+            .col-lg-12
+              %h1
+                %span.title-italic And creating
+                %br
+                %span.title-italic new ideas through a
+                %br
+                %span Process
+                %span.title-italic of
+                %span Synthesis
+              %p
+                I describe the process of sense-making as rigorous and intentional.  A new insight always feels like a flash of magic.  Often new connections will topple out one after another in what feels like an uncontrollable roller coaster.  And while it’s true that the actual moment our brains make a new connection is always serendipitous, we can engage in processes that make new ideas occur much more often.  Data can be made physical and moveable.  Behavior may be questioned and judged from different mental frames.  Tension can be created between the mundane and the absurd.  Overall, strategies can be devised that force us to experience and engage with each others thoughts rather than idly waiting for them to happen.
           .circle
             = fa_icon "angle-down 3x"
         #section-4-photo.photo
@@ -114,58 +132,60 @@
             %p
               Photo taken by Jacob Rader, 2013
         .container
-          .row
+          .row.synthesis
             .col-lg-4
               .icon-link
-                %img{class: 'svg', src:'assets/icons/svg/icon-pushpin.svg'}
+                %a{ href: synthesis_path(anchor: 'section-synthesis-1')}
+                  %img{class: 'svg', src:'assets/icons/svg/icon-pushpin.svg'}
                 %h3
                   Externalization
             .col-lg-4
               .icon-link
-                %img{class: 'svg', src:'assets/icons/svg/icon-book.svg'}
+                %a{ href: synthesis_path(anchor: 'section-synthesis-2')}
+                  %img{class: 'svg', src:'assets/icons/svg/icon-book.svg'}
                 %h3
                   Narrative
             .col-lg-4
               .icon-link
-                %img{class: 'svg', src:'assets/icons/svg/icon-lightbulb.svg'}
+                %a{ href: synthesis_path(anchor: 'section-synthesis-3')}
+                  %img{class: 'svg', src:'assets/icons/svg/icon-lightbulb.svg'}
                 %h3
                   Insight
         #section-5
           .container
-            %h1
-              %span.title-italic Resulting in creative arguments
-              %br
-              %span.title-italic articulated through
-              %br
-              %span Rapid
-              %span.title-italic.large, Iterative
-              %span Prototyping.
-            %p
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere ac nisi a venenatis. Sed condimentum quam eget convallis tempor. Proin scelerisque tellus non nunc molestie, et pharetra risus congue. Nam malesuada, sem eu bibendum lobortis, tortor arcu vehicula orci, nec iaculis orci ipsum ut lorem. Morbi at ante in sem luctus aliquam. Pellentesque bibendum mauris eros. Ut tempus risus id magna dapibus sodales.
+            .col-lg-12
+              %h1
+                %span.title-italic Resulting in creative arguments
+                %br
+                %span.title-italic articulated through
+                %br
+                %span Rapid
+                %span.title-italic.large, Iterative
+                %span Prototyping.
+              %p
+                I believe rapid iteration early in the prototyping process leads to much more robust final designs by provoking dialog as well and helping the designer avoid major flaws before they are engrained.  This is especially import in wicked problem spaces.  Complex problems can be like void, they will absorb as much time as we give to trying to understand them.  What’s more, new understandings and insights don’t ever solve complex problems on their own.  Designing in complex problem spaces requires creative problem solving through creative articulation.  You must make something.  Confront the imagined with the actual.  Put it in front of people.  Learn from it.  Remake it.  Keep prototyping solutions and getting feedback; the manifestations will stand a much better chance of being appropriate and impactful.
           .circle
             = fa_icon "angle-down 3x"
         #section-5-photo.photo
           %img{src: '/assets/prototyping-main.png'}
         .container
-          .row
-            .col-lg-3
+          .row.prototyping
+            .col-lg-4
               .icon-link
-                %img{class: 'svg', src:'assets/icons/svg/icon-pen.svg'}
+                %a{ href: prototyping_path(anchor: 'section-prototyping-1')}
+                  %img{class: 'svg', src:'assets/icons/svg/icon-pen.svg'}
                 %h3
                   Sketching
-            .col-lg-3
+            .col-lg-4
               .icon-link
-                %img{class: 'svg', src:'assets/icons/svg/icon-pinata.svg'}
-                %h3
-                  Creative Dialog
-            .col-lg-3
-              .icon-link
-                %img{class: 'svg', src:'assets/icons/svg/icon-testtubes.svg'}
+                %a{ href: prototyping_path(anchor: 'section-prototyping-2')}
+                  %img{class: 'svg', src:'assets/icons/svg/icon-testtubes.svg'}
                 %h3
                   Testing & Feedback
-            .col-lg-3
+            .col-lg-4
               .icon-link
-                %img{class: 'svg', src:'assets/icons/svg/icon-lightningbolt.svg'}
+                %a{ href: prototyping_path(anchor: 'section-prototyping-3')}
+                  %img{class: 'svg', src:'assets/icons/svg/icon-lightningbolt.svg'}
                 %h3
                   Rapid Iteration
 
