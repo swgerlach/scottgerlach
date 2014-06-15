@@ -13,11 +13,13 @@
         %li{class: (current_path == root_path) ? 'active' : '' }
           %a.nav-link.current{href: root_path} Scott Gerlach
       %ul.nav.navbar-nav.navbar-right
-        %li{class: (current_path == about_path) ? 'active' : '' }
-          %a.nav-link{href: about_path} About
-        %li{class: (current_path == research_path) ? 'active' : '' }
-          %a.nav-link{href: research_path} Research
-        %li{class: (current_path == synthesis_path) ? 'active' : '' }
-          %a.nav-link{href: synthesis_path} Synthesis
         %li{class: (current_path == prototyping_path) ? 'active' : '' }
-          %a.nav-link{href: prototyping_path} Prototyping
+          %a.nav-link{id: 'prototyping-nav', href: prototyping_path} Prototyping
+        %li{class: (current_path == research_path) ? 'active' : '' }
+          %a.nav-link{id: 'research-nav', href: research_path} Research
+        %li{class: (current_path == synthesis_path) ? 'active' : '' }
+          %a.nav-link{id: 'synthesis-nav', href: synthesis_path} Synthesis
+        %li{id: 'about-nav', class: (current_path == about_path) ? 'active' : '' }
+          %a.nav-link{id: 'about-nav', href: about_path} About
+        %li
+          %a.nav-link{id: 'resume', href: '#'} Résumé

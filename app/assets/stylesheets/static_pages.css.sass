@@ -550,25 +550,40 @@ div[id^='section-prototyping']
 #footer
   display: none
 
+#resume
+  background: -webkit-linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)) left 5px no-repeat
+  background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)) left 5px no-repeat
+  background-size: 1px 85%
+  border-bottom: 0
+
 // flat-ui overwrites
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus,
   color: $brightblue
-  border-bottom: 5px solid
+  border-bottom: 5px solid $brightblue
+  margin-bottom: -5px
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > li.active > a:hover, .navbar-default .navbar-nav > li.active > a:focus
+  color: $green
+  border-bottom: 5px solid $green
   margin-bottom: -5px
 
 .navbar-default .navbar-nav > li > a
   -webkit-transition: 0s ease
   transition: 0s ease
+
 .navbar-nav > li > a
   font-size: 1.125em
   text-transform: uppercase
   font-weight: 800
 
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus
-  color: $navy
+.navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus
+  color: $brightblue
 
 .navbar-collapse .navbar-nav.navbar-left:first-child > li:first-child a
   border-radius: 0px
+
+.navbar-collapse
+  background-color: white
 
 .label-success
   background-color: $green
@@ -591,7 +606,7 @@ div[id^='section-prototyping']
   font-weight: bold
 
 // media settings
-@media(max-width:767px)
+@media(max-width:992px)
   div[id^='section']
     h1
       span
@@ -600,5 +615,9 @@ div[id^='section-prototyping']
           font-size: 50px
         &.large
           font-size: 1.115em
+  .navbar-nav > li > a
+    font-size: .93em
 
-
+@media(max-width:768px)
+  .navbar-collapse .navbar-nav.navbar-right:last-child
+    margin-bottom: 5px
