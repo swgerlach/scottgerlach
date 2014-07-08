@@ -597,9 +597,20 @@ div[id^='section-prototyping']
 #mentoring-kolko
 
 .glow
+  -webkit-animation-duration: 3s
+  -webkit-animation-name: glower
+  -webkit-animation-iteration-count: infinite
   animation-duration: 3s
   animation-name: glower
   animation-iteration-count: infinite
+
+@-webkit-keyframes glower
+  from
+    opacity: .4
+  50%
+    opacity: 1
+  to
+    opacity: .4
 
 @keyframes glower
   from
