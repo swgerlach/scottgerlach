@@ -48,7 +48,10 @@ jQuery ->
     $(".subpage-nav li.active").removeClass "active"
     $(this).addClass "active"
 
-
+  $(".glow").on 'click', ->
+    $(this).removeClass("glow")
+  $(".glow").mouseover ->
+    $(this).removeClass("glow")
 
   return
 

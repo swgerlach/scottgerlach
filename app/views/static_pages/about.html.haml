@@ -11,9 +11,9 @@
             %span.title-italic.large W.
             %span Gerlach
           %h2
-          %img.spaced{src: '/assets/about-9-blue.jpg'}
+          %img{src: '/assets/about-9-blue.jpg'}
           %p
-            Scott is mild mannered fellow with serious hermetic tendencies. He is drawn out of his cave by his passion for exchanging ideas with thoughtful folks. He values clarification over simplification. At various points in his life he has been unmistakably obsessed with snails, lizards, snakes, bubbles, swimming, music, mathematics, tutoring, virtual smelting, rocket jumps, football strategy, gardening, and he always enjoys sharing with others.
+            Scott is mild mannered fellow with a passion for exchanging ideas with thoughtful folks. He values clarification over simplification. At various points in his life he has been unmistakably obsessed with snails, lizards, snakes, bubbles, swimming, music, mathematics, tutoring, virtual smelting, rocket jumps, football strategy, gardening, and he always enjoys sharing with others.
 
             Scott lives in Austin, Texas under a roof with his girlfriend Cheyenne Weaver and his dog Jackson where they get up to adventures and down with the boogie.
           .center
@@ -24,29 +24,22 @@
       .container
         %h1
           %span Presenting
-          %span.title-italic with an
           %br
-          %span.title-italic informed, confident
+          %span.title-italic with an informed, confident
+          %br
           %span Perspective
-          %span.title-italic
-          %br
-          %span.title-italic to create a
-          %span Compelling
-          %span.title-italic ,
-          %br
-          %span.title-italic public
-          %span Diaglog
         %h2
           %span Voice
     #section-about-2-photo.photo
       .container
         .row
           .col-lg-12
-            %img.spaced#scott-presenting{src: 'assets/scott_presenting.jpg'}
+            %img#scott-presenting{src: 'assets/scott_presenting.jpg'}
         .row
           .col-lg-12
             %p
               My background as an educator in math and science is very helpful in presentations and discussions: enabling me to be present in the moment and engage questions with appropriate examples and elaboration.
+        .spaced
         .row
           .col-lg-4
             .trans-block
@@ -55,10 +48,11 @@
               %p
                 Football writing has exposed me to variety of mediums.  I've written several articles for college football annual magazines and I've very comfortable with longform narratives.
           .col-lg-8
-            %img#mag-img.spaced{src: '/assets/about-6-bw.png'}
+            %img#mag-img{src: '/assets/about-6-bw.png'}
+        .spaced
         .row
           .col-lg-8
-            %iframe.spaced{src: "//player.vimeo.com/video/81353861?color=436AE1", width: "750", height: "422", frameborder:"0", webkitallowfullscreen: true, mozallowfullscreen: true, allowfullscreen: true}
+            %iframe{src: "//player.vimeo.com/video/81353861?color=436AE1", width: "750", height: "422", frameborder:"0", webkitallowfullscreen: true, mozallowfullscreen: true, allowfullscreen: true}
           .col-lg-4
             .trans-block
               %h3
@@ -73,7 +67,7 @@
           .col-lg-6
             .row
               .col-lg-12
-                %img#ac4d-logo.spaced{src: '/assets/social-icons/logo_ac4d-navy.png'}
+                %img#ac4d-logo{src: '/assets/social-icons/logo_ac4d-navy.png'}
             .row
               .col-lg-10.col-lg-offset-1
                 .quote-block
@@ -107,26 +101,33 @@
       .container
         .row
           .col-lg-12
-            %img.spaced{src: '/assets/about-4.jpg'}
+            %img{src: '/assets/about-4.jpg'}
+        .spaced
         .row
+          .col-lg-6
+            .row
+              .col-lg-10
+                %img{src: '/assets/about-3.jpg'}
+          .col-lg-6
+            .trans-block
+              %h3
+                Thinking Texas Football
+              %p
+                Realizing that the type of publication that we wanted just didn't exist, we created an ebook that would cover the Texas Longhorns.  In addition to contributing a third of the content, I also designed and published the ebook using inDesign.
+              %span co-authors: Jason Chilton & Paul Wadlington
+        .spaced
+        .row
+          .col-lg-8
+            %iframe{width: "750", height: "422", src: "//player.vimeo.com/video/68139958", frameborder: "0", allowfullscreen: true}
           .col-lg-4
             .trans-block
               %h3
                 Video Breakdowns
               %p
                 Through iteration I have found that video with graphical overlay is a very effective way of sharing insight about complex action.
-          .col-lg-8
-            %iframe.spaced{width: "750", height: "422", src: "//player.vimeo.com/video/68139958", frameborder: "0", allowfullscreen: true}
-        .row
-          .col-lg-8
-            .trans-block
-              %h3
-                Thinking Texas Football
-              %p
-                Realizing that the type of publication that we wanted just didn't exist, we created a ebook that would cover the Texas Longhorns.  In addition to contributing a third of the content, I also designed and published the ebook using inDesign.
-              %span co-authors: Jason Chilton & Paul Wadlington
-          .col-lg-4
-            %img.spaced{src: '/assets/about-3.jpg'}
+
+
+
 
     .mids
       .container
@@ -134,7 +135,7 @@
           .col-lg-6
             .row
               .col-lg-10.col-lg-offset-1
-                %img#swgerlach-logo.spaced{src: '/assets/social-icons/swgerlach-navy.png'}
+                %img#swgerlach-logo{src: '/assets/social-icons/swgerlach-navy.png'}
                 .quote-block
                   "The philosophical and tactical changes the Longhorns are making on offense come with their share of benefits and constraints. This is decidedly not just an overclocked version of the offense we’ve run for the past two seasons. Instead, it’s an entirely different approach that happens to make use of many of the same concepts."
                   %a{ href: "http://www.barkingcarnival.com/2013/5/27/4369174/spring-clinging-a-primer", target: "_blank"}
@@ -170,35 +171,45 @@
     #section-about-4-photo.photo
       .container
         .row
-          .col-lg-4
-            %img#alc-logo.spaced{src: '/assets/ALC_logo.png'}
-          .col-lg-8
+          .col-lg-7
+            %img{id:'mentoring-kolko', src: '/assets/about-mentorship.jpg'}
+          .col-lg-5
+            .trans-block
+              %h3
+                Valuing Critique
+              %p
+                Thoughtful critique is one of the things I value most from other people: in design and in life.   During my time at the Austin Center for Design, the faculty did a tremendous job of offering critique at every stage.  It made plain to me how motivating and exciting it is to work in a creative environment where insightful people feel free to share their thoughts.  It's crucial to me to find a professional environment that both offers and encourages regular mentorship and critique.
+        .spaced
+        .row
+          .col-lg-7
             %h3
               Tutoring
             .trans-block
               %p
-                Working one on one with thousands of students in my ten years as a math and physics tutor taught a great deal about how to engage in interactions that encourage growth and realization.  The linear thinking and abstract reasoning demanded by math and physics result in radically different modes of comprehension from person to person.  Quizzically, I found over time as I explored different articulations with many different students that there was often a way of providing enough structure for someone to naturally orient toward methods that made sense to them.
-        .row
-          .col-lg-6
-            .trans-block
-              %h3
-                A Technique
-              %p
-                I think mastery is evidenced by the ability to design a reliable understanding of that subject for others. After hundreds of iterations, I can only claim to have designed a handful of explanations in high school math and physics. Most of the design that I have contributed has been built on tried and traditional techniques where I have found small gaps for improvement that lead the student to a more agile understanding and sustained success with the concept.
-          .col-lg-6
-            %iframe.spaced{src: "//player.vimeo.com/video/61766941?color=436AE1", width: "555", height: "313", frameborder:"0", webkitallowfullscreen: true, mozallowfullscreen: true, allowfullscreen: true}
+                Working one on one with thousands of students in my ten years as a tutor taught me a great deal about how to engage in interactions that encourage growth and realization.  The linear thinking and abstract reasoning demanded by math and physics result in radically different modes of comprehension from person to person.  I found over time as I explored different articulations with many different students that there was often a way of providing enough structure for someone to naturally orient toward methods that made sense to them.
+          .col-lg-5
+            %img#alc-logo{src: '/assets/ALC_logo.png'}
+        .spaced
         .row
           .col-lg-7
+            #factoring
+              %iframe{src: "//player.vimeo.com/video/61766941?color=436AE1", width: "653", height: "367", frameborder:"0", webkitallowfullscreen: true, mozallowfullscreen: true, allowfullscreen: true}
+          .col-lg-5
             .trans-block
               %h3
-                More things
+                Iterative Technique
               %p
-                The a gap between fluency and mastery of a subject emerges when you interact with other. Fluency is the ability to delve into a subject at any given time (it’s one of the essential competencies I’ve looked for in potential tutors). Whereas mastery is evidenced by the ability to design a reliable understanding of that subject for others. After hundreds of iterations, I can only claim to have designed a handful of explanations in high school math and physics. Most of the design that I have contributed has been built on tried and traditional techniques where I have found small gaps for improvement that lead the student to a more agile understanding and sustained success with the concept.
-          .col-lg-5
-            %img.spaced{src: '/assets/about-mentorship.jpg'}
+                I think mastery is evidenced by the ability to design a reliable understanding of a subject for others. After hundreds of iterations, I can only claim to have designed a handful of explanations in high school math and physics built on traditional techniques where I have found small gaps for improvement.
+
+
+
 
 
     .mids
       .container
         %p.tight
           "Each experience is a moving force.  Its value can be judged only on the ground of what it moves toward and into.  Experience does not simply go inside a person.  Every genuine experience has an active side which changes in some degree the objective conditions under which experiences are had.  From the standpoint of growth as education and education as growth the question is whether growth in this direction promotes or retards growth in general.  Does this form of growth create conditions for further growth, or does it set up conditions that shut out the person who has grown in this particular direction from the occasions, stimuli, and opportunities for continuing growth in new directions?"
+          %br
+          %span.pull-right - John Dewey
+          %br
+

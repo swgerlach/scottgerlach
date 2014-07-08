@@ -11,7 +11,7 @@
     .collapse.navbar-collapse
       %ul.nav.navbar-nav.navbar-left
         %li{class: (current_path == root_path) ? 'active' : '' }
-          %a.nav-link.current{href: root_path} Scott Gerlach
+          %a.nav-link.current{id: 'home-nav', href: root_path} Scott Gerlach
       %ul.nav.navbar-nav.navbar-right
         %li{class: (current_path == prototyping_path) ? 'active' : '' }
           %a.nav-link{id: 'prototyping-nav', href: prototyping_path} Prototyping

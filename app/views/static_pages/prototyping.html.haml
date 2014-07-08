@@ -1,113 +1,6 @@
 = render '/layouts/subnav'
 
 #prototyping-main
-  #prototyping1.anchor
-    #section-prototyping-1.subpage-title
-      .container
-        .col-lg-12
-          %h1
-            %span.title-italic Physically manifest ideas...
-            %br
-            %span Make something
-
-          %h2
-            %span Sketching & Mapping
-    #section-prototyping-1-photo.photo
-      .container
-        .row
-          .col-lg-12
-            %img.spaced{src: '/assets/sketches/faces.jpg'}
-        .row
-          .col-lg-12
-            %h3 Concept Maps and System Diagrams
-        .row
-          .col-lg-6
-            %img.spaced{src: '/assets/prototyping-3.png'}
-          .col-lg-6
-            %img.spaced{src: '/assets/prototyping-3b.png'}
-        .row
-          .col-lg-12
-            .trans-block
-              %p
-                Visual representations of an entire system (above) bring focus to design priorities and encourage me focus on the most important aspects of the system in the initial designs (below).
-          .col-lg-4.col-lg-offset-1
-            %img.spaced{src: '/assets/sketches/therm-1.png'}
-          .col-lg-4.col-lg-offset-2
-            %img.spaced{src: '/assets/sketches/therm-2.png'}
-        .row
-          .col-lg-12
-            %h3 Storyboards
-            .trans-block
-              %p
-                Storyboards help me explore the affective aspects and emotional context of an idea.  They are also effective at visually communicating the core concept to others.  Visual representations make it easier to emotionally project ourselves and others into a new idea.
-        .row
-          .col-lg-12
-            %img.spaced{src: '/assets/current-system-storyboard.png'}
-          .col-lg-12
-            %img.spaced{src: '/assets/proposed-system-storyboard.png'}
-
-
-
-
-    .mids
-      .container
-        .row
-          .col-lg-12
-            %p.tight
-              "Each experience is a moving force.  Its value can be judged only on the ground of what it moves toward and into.  Experience does not simply go inside a person.  Every genuine experience has an active side which changes in some degree the objective conditions under which experiences are had.  From the standpoint of growth as education and education as growth the question is whether growth in this direction promotes or retards growth in general.  Does this form of growth create conditions for further growth, or does it set up conditions that shut out the person who has grown in this particular direction from the occasions, stimuli, and opportunities for continuing growth in new directions?"
-
-  #prototyping2.anchor
-    #section-prototyping-2
-      .container
-        %h1
-          %span Detatch
-          %br
-          %span.title-italic from new designs and
-          %br
-          %span Ground
-          %span.title-italic them
-          %br
-          %span.title-italic in
-          %span Reality
-          %br
-        %h2
-          %span Testing & Feedback
-    #section-prototyping-2-photo.photo
-      .container
-        .row
-          .col-lg-12
-            %img.spaced{src: '/assets/testing-3.jpg'}
-        .row
-          .col-lg-6
-            %img.spaced{src: '/assets/testing-1.jpg'}
-          .col-lg-6
-            .trans-block
-              %p
-                As a design grows from research implications to concept to prototypes, it's crucical to get the idea in front of people and validate the concept, content, and usability through testing.  Testing techniques should be based on the stage and needs of the project.
-        .row
-          .col-lg-8
-            %img.spaced{src: '/assets/testing-10.jpg'}
-          .col-lg-4
-            %img.spaced{src: '/assets/testing-4-tall.jpg'}
-
-        .row
-          .col-lg-12
-            .trans-block
-              %h3
-                Paper Prototyping
-              %p
-                I create low tech prototypes that allow me to put ideas in front of users to test the most important interactions very early in the prototyping process.  Rapid prototyping is most effective with this sort of feedback early and often because it helps me avoid major problems before they have become integral parts of the design.
-        .row
-          .col-lg-6
-            %img.spaced{src: '/assets/testing-5.jpg'}
-          .col-lg-6
-            %img.spaced{src: '/assets/testing-9.jpg'}
-
-    .mids
-      .container
-        %p.tight
-          "Each experience is a moving force.  Its value can be judged only on the ground of what it moves toward and into.  Experience does not simply go inside a person.  Every genuine experience has an active side which changes in some degree the objective conditions under which experiences are had.  From the standpoint of growth as education and education as growth the question is whether growth in this direction promotes or retards growth in general.  Does this form of growth create conditions for further growth, or does it set up conditions that shut out the person who has grown in this particular direction from the occasions, stimuli, and opportunities for continuing growth in new directions?"
-
   #prototyping3.anchor
     #section-prototyping-3
       .container
@@ -132,21 +25,12 @@
         .row
           .col-lg-12
             %img.spaced{src: '/assets/prototyping-main.png'}
-        .row
-          .col-lg-12
-            .trans-block
-              %h3
-                Killer Filler
-              %p
-                ullam condimentum eleifend justo vitae aliquam. Cras magna lacus, elementum sit amet vulputate nec, euismod nec massa. Sed consequat libero et felis egestas, id varius mi sodales. Etiam sit amet lectus mauris. Nullam dictum leo eget risus hendrerit eleifend. Fusce sodales dui ac turpis placerat cursus. Donec at eros neque. Phasellus tristique dui mauris, at luctus nisl fermentum suscipit.
-
-
 
     .mids
       .container
         .row
           .col-lg-5
-            .trans-block
+            #therm-text.trans-block
               %h3
                 An Interactive Prototype
               %p
@@ -156,46 +40,40 @@
           .col-lg-7
             = render 'therm'
 
-
-
     #section-prototyping-4-photo.photo
       .container
         .row
           .col-lg-12
-            .trans-block
-              %h3
-                Killer Filler
-              %p
-                ullam condimentum eleifend justo vitae aliquam. Cras magna lacus, elementum sit amet vulputate nec, euismod nec massa. Sed consequat libero et felis egestas, id varius mi sodales.
-          .col-lg-10.col-lg-offset-1
-            %img.wide-spaced{src: '/assets/prototyping-10.jpg'}
-    .mids
-      .container
-        .row
-          .col-lg-12
-            .trans-block
+            .trans-block.margin-above
               %h3 One day website redesign
-
+        .row
+          .col-lg-10.col-lg-offset-1
+            %img{src: '/assets/prototyping-10.jpg'}
+            .credit-box
+              Jacob Rader
+        .row
+          .col-lg-10.col-lg-offset-1
+            .trans-block
+              %p.no-border
+                I enjoy working with other talented people under difficult contraints.  When a full design process isn't possible, people tend to let go of mental obstacles they to grapple with in a long-term project and just focus how their talents apply to the task at hand.  While I think process is a very important part of creativity, I also believe it's crucial to be willing to intuitively adjust or altogether abandon parts of the design process if they aren't well suited to the contrainsts of a project.  I had the opportunity to work with five other designers (above) to put everything we had into redesigning a website for a local business (below).
         .row
           .col-lg-12
             %img.wide-spaced{src: '/assets/wires/akfa.png'}
-        .row
-          .col-lg-12
-            .trans-block
-              %p
-                High fidelity, interactive prototypes more clearly convey the interactions that are integral to the character of the design.
 
-
+    .mids
+      .container
+        %p.tight
+          "When moves function in an exploratory way, the designer allows the situation to ‘talk back’, causing the designer to see things in a new way - to construct new meanings and intentions.  It is only in within the framework of an appreciative system - with its liking, preferences, values, norms, and meanings - that design experimentation can achieve a kind of objectivity."
+          %br
+          %span.pull-right - Donald Schon
+          %br
 
     #section-prototyping-5-photo.photo
       .container
         .row
           .col-lg-12
-            .trans-block
-              %h3
-                Killer Filler
-              %p
-                ullam condimentum eleifend justo vitae aliquam. Cras magna lacus, elementum sit amet vulputate nec, euismod nec massa. Sed consequat libero et felis egestas, id varius mi sodales. Etiam sit amet lectus mauris. Nullam dictum leo eget risus hendrerit eleifend. Fusce sodales dui ac turpis placerat cursus. Donec at eros neque. Phasellus tristique dui mauris, at luctus nisl fermentum suscipit.
+            .trans-block.margin-above
+              %h3 Dialog with the Design
         .row
           .col-lg-6
             %img.wide-spaced{src: '/assets/wires/new-sketches-01.png'}
@@ -230,4 +108,124 @@
           .col-lg-12
             .trans-block
               %p
-                At high fidelity, the tone and voice of the design start to emerge visually.
+                At high fidelity, the tone and voice of a design start to emerge.
+
+  #prototyping1.anchor
+    #section-prototyping-1.subpage-title
+      .container
+        .col-lg-12
+          %h1
+            %span.title-italic Physically manifest ideas...
+            %br
+            %span Make something
+
+          %h2
+            %span Sketching & Mapping
+    #section-prototyping-1-photo.photo
+      .container
+        .row
+          .col-lg-12
+            %img.spaced{src: '/assets/sketches/faces.jpg'}
+        .row
+          .col-lg-12
+            %h3 Concept Maps and System Diagrams
+        .row
+          .col-lg-6
+            %img.spaced{src: '/assets/prototyping-3.png'}
+          .col-lg-6
+            %img.spaced{src: '/assets/prototyping-3b.png'}
+        .row
+          .col-lg-12
+            .trans-block
+              %p.no-border
+                Visual representations of an entire system (above) bring focus to design priorities and encourage me focus on the most important aspects of the system in the initial designs (below).
+          .col-lg-4.col-lg-offset-1
+            %img.spaced{src: '/assets/sketches/therm-1.png'}
+          .col-lg-4.col-lg-offset-2
+            %img.spaced{src: '/assets/sketches/therm-2.png'}
+        .row
+          .col-lg-12
+            %h3 Storyboards
+            .trans-block
+              %p
+                Storyboards help me explore the affective aspects and emotional context of an idea.  They are also effective at visually communicating the core concept to others.  Visual representations make it easier to emotionally project ourselves and others into a new idea.
+        .row
+          .col-lg-12
+            %img.spaced{src: '/assets/current-system-storyboard.png'}
+          .col-lg-12
+            %img.spaced{src: '/assets/proposed-system-storyboard.png'}
+
+
+
+
+    .mids
+      .container
+        .row
+          .col-lg-12
+            %p.tight
+              "Although many interaction designers recognize the importance of building interactive frameworks that encourage affective discourse in the systems they are designing, they often fail to define the same need in their own sense-making process.  By externalizing ideas into the world and making them actual, designers create the opportunity for a perceptual layer between new ideas and existing ones.  Abductive logic can be strengthened during this process by focusing on iconic representations that facilitate new projections and sense-making into the design."
+              %br
+              %a.pull-right.proto-link{href: 'http://www.ac4d.com/2014/04/09/building-a-pragmatic-definition-for-sensemaking/', target: '_blank'} Read more
+              %br
+
+  #prototyping2.anchor
+    #section-prototyping-2
+      .container
+        %h1
+          %span Detatch
+          %br
+          %span.title-italic from new designs and
+          %br
+          %span Ground
+          %span.title-italic them
+          %br
+          %span.title-italic in
+          %span Reality
+          %br
+        %h2
+          %span Testing & Feedback
+    #section-prototyping-2-photo.photo
+      .container
+        .row
+          .col-lg-12
+            %img.spaced{src: '/assets/testing-3.jpg'}
+            .credit-box
+              Jacob Rader
+        .row
+          .col-lg-6
+            %img.spaced{src: '/assets/testing-1.jpg'}
+            .credit-box
+              Jacob Rader
+          .col-lg-6
+            .trans-block
+              %p.no-border
+                As a design grows from research implications to concept to prototypes, it's crucical to get the idea in front of people and validate the concept, content, and usability through testing.  Testing techniques should be based on the stage and needs of the project.
+        .row
+          .col-lg-8
+            %img.spaced{src: '/assets/testing-10.jpg'}
+            .credit-box
+              Jacob Rader
+          .col-lg-4
+            %img.spaced{src: '/assets/testing-4-tall.jpg'}
+
+        .row
+          .col-lg-12
+            .trans-block
+              %h3
+                Paper Prototyping
+              %p
+                I create low tech prototypes that allow me to put ideas in front of users to test the most important interactions very early in the prototyping process.  Rapid prototyping is most effective with this sort of feedback early and often because it helps me avoid major problems before they have become integral parts of the design.
+        .row
+          .col-lg-6
+            %img.spaced{src: '/assets/testing-5.jpg'}
+          .col-lg-6
+            %img.spaced{src: '/assets/testing-9.jpg'}
+
+    .mids
+      .container
+        %p.tight
+          "As a designer externalizes subjective ideas and iteratively layers new explorations on top of each other, the designer creates a dialog with the system that allows for experimentation within constraint.  This type of problem solving is non-linear and highly subjective but as the system gains definition it takes on a nature that the designer is able to balance his/her decisions against.  In this sense, design is the less about problem solving and more about solution articulation."
+          %br
+          %a.pull-right.proto-link{href: 'http://www.ac4d.com/2014/04/09/building-a-pragmatic-definition-for-sensemaking/', target: '_blank'} Read more
+          %br
+

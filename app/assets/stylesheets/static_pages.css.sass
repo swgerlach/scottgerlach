@@ -103,18 +103,18 @@ div[id^='section']
 
 
   .credit-box
+    float: right
+    text-align: right
+    opacity: .8
     position: relative
-    padding: 16px 0
+    padding: 0 10px 0 0
     z-index: 4
-    p
-      font-size: 1em
-      text-align: left
-      font-style: italic
-      text-shadow: 0 0 #fff
-      margin: 0
-      padding: 0 20px
-    width: 340px
-    margin-top: -64px
+    font-size: 1em
+    font-style: italic
+    text-shadow: 0 0 #fff
+    margin: -32px 0 0 0
+    &:before
+      content: "Photo by collaborator "
   .circle
     bottom: -87px
     position: relative
@@ -242,7 +242,7 @@ div[id^='section-prototyping']
     margin: -20px 15px 25px -175px
     width: 160px
 .spaced
-  margin: 15px 0
+  margin: 30px 0 0 0
 .wide-spaced
   margin: 40px 0
 .subpage-title
@@ -273,14 +273,17 @@ div[id^='section-prototyping']
     &:focus, &:hover
       opacity: 1
   li
-    opacity: .5
+    opacity: .3
     height: 70px
     width: 70px
     padding: 0 4px
     border-bottom: 1px solid rgba(0, 0, 0, .2)
     vertical-align: center
-    -webkit-transition: 0s ease
-    transition: 0s ease
+    -webkit-transition: .5s ease
+    transition: .5s ease
+    background: -webkit-linear-gradient(transparent, transparent) left center no-repeat
+    background: linear-gradient(transparent, transparent) left center no-repeat
+    background-size: 4px 100%
     a
       height: 0px
       position: absolute
@@ -324,15 +327,11 @@ div[id^='section-prototyping']
         &:after
           transform: rotate(135deg) skewY(-45deg) scale(0.707, 1.414) translate(50%)
           -webkit-transform: rotate(135deg) skewY(-45deg) scale(0.707, 1.414) translate(50%)
-    &:hover
-      background: -webkit-linear-gradient($black, $black) left center no-repeat
-      background: linear-gradient($black, $black) left center no-repeat
-      background-size: 4px 100%
     &.active, &:hover, &:hover .note, &:hover .triangle
       opacity: 1
     &:hover .note
       display: inline
-    &.active
+    &.active, &:hover
       &.about-li
         background: -webkit-linear-gradient($blue, $blue) left center no-repeat
         background: linear-gradient($blue, $blue) left center no-repeat
@@ -396,8 +395,27 @@ div[id^='section-prototyping']
 #research-main, #synthesis-main, #prototyping-main, #about-main
   .white-block
     background: rgba(255, 255, 255, .5)
-    margin: 15px 0
+    margin: 0
     padding: 40px 20px
+    p
+      font-size: 18px
+    .small-block-bottom
+      position: relative
+      width: 100%
+      left: 0px
+      font-size: 18px
+      bottom: 20px
+      margin: 15px 0
+    a
+      text-shadow: 0
+      margin-left: 10px
+      color: $brightblue
+      opacity: .8
+      &:hover
+        opacity: 1
+
+
+
 
   div[id^='section'], div[id^='section'].photo
     padding-left: 55px
@@ -407,6 +425,11 @@ div[id^='section-prototyping']
     padding: 100px 0 100px 55px
     &.subpage-title
       margin: 53px 0 0 0
+    a
+      margin-left: 10px
+      color: #BDC3C7
+      &:hover
+        color: #CACFD2
 
 
 .img-top-label
@@ -421,7 +444,6 @@ div[id^='section-prototyping']
 
 .trans-block
   background: none
-  margin: 15px 0
   padding: 40px 20px
   text-shadow: 0 0 $navy
   text-align: center
@@ -429,6 +451,8 @@ div[id^='section-prototyping']
     padding: 40px
     border-top: 1px solid rgba(0,0,0,.1)
     border-bottom: 1px solid rgba(0,0,0,.1)
+    &.no-border
+      border: none
   h3
     margin-top: 0
 
@@ -457,6 +481,10 @@ div[id^='section-prototyping']
     color: #BDC3C7
     &:hover
       color: #CACFD2
+
+.border-bottom
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+  padding: 0 28px
 
 .icon-link
   text-align: center
@@ -520,6 +548,12 @@ div[id^='section-prototyping']
     svg
       fill: $darkgreen
 
+#prototyping-main a.proto-link
+  text-shadow: none
+  color: #DEE0E2
+  &:hover
+    color: #E4E8EA
+
 .wrapper
   padding: 100px
 
@@ -534,7 +568,7 @@ div[id^='section-prototyping']
   margin: 10px 0 20px
 
 #alc-logo
-  margin-top: 115px
+  margin-top: 150px
 
 
 #scott-cheyenne
@@ -555,26 +589,66 @@ div[id^='section-prototyping']
   background: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)) left 5px no-repeat
   background-size: 1px 85%
   border-bottom: 0
+  &:focus, &:hover
+    color: $brightblue
+#factoring
+  margin-top: 100px
+
+#mentoring-kolko
+
+.glow
+  animation-duration: 3s
+  animation-name: glower
+  animation-iteration-count: infinite
+
+@keyframes glower
+  from
+    opacity: .4
+  50%
+    opacity: 1
+  to
+    opacity: .4
+
+.margin-above
+  margin-top: 100px
+
+#therm-text
+  margin-top: 100px
+
+#food-identity
+  height: 500px
+
+.navbar-default .navbar-nav > li > #prototyping-nav:hover, .navbar-default .navbar-nav > li > #prototyping-nav:focus, .navbar-default .navbar-nav > .active > #prototyping-nav, .navbar-default .navbar-nav > li.active > #prototyping-nav:hover, .navbar-default .navbar-nav > li.active > #prototyping-nav:focus
+  border-bottom: 5px solid $green
+
+.navbar-default .navbar-nav > li > #research-nav:hover, .navbar-default .navbar-nav > li > #research-nav:focus, .navbar-default .navbar-nav > .active > #research-nav, .navbar-default .navbar-nav > li.active > #research-nav:hover, .navbar-default .navbar-nav > li.active > #research-nav:focus
+  border-bottom: 5px solid $red
+
+.navbar-default .navbar-nav > li > #synthesis-nav:hover, .navbar-default .navbar-nav > li > #synthesis-nav:focus, .navbar-default .navbar-nav > .active > #synthesis-nav, .navbar-default .navbar-nav > li.active > #synthesis-nav:hover, .navbar-default .navbar-nav > li.active > #synthesis-nav:focus
+  border-bottom: 5px solid $lightplum
+
+.navbar-default .navbar-nav > li > #home-nav:hover, .navbar-default .navbar-nav > li > #home-nav:focus, .navbar-default .navbar-nav > .active > #home-nav, .navbar-default .navbar-nav > li.active > #home-nav:hover, .navbar-default .navbar-nav > li.active > #home-nav:focus
+  border-bottom: 5px solid $navy
 
 // flat-ui overwrites
-.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus,
-  color: $brightblue
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > li.active > a:hover, .navbar-default .navbar-nav > li.active > a:focus
+  color: $navy
   border-bottom: 5px solid $brightblue
   margin-bottom: -5px
 
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > li.active > a:hover, .navbar-default .navbar-nav > li.active > a:focus
-  color: $green
-  border-bottom: 5px solid $green
-  margin-bottom: -5px
-
 .navbar-default .navbar-nav > li > a
-  -webkit-transition: 0s ease
-  transition: 0s ease
+  -webkit-transition: .8s ease
+  transition: .8s ease
+  border-bottom: 5px solid transparent
 
 .navbar-nav > li > a
   font-size: 1.125em
   text-transform: uppercase
   font-weight: 800
+  opacity: .6
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > li > a:hover
+  opacity: 1
 
 .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus
   color: $brightblue
@@ -582,8 +656,8 @@ div[id^='section-prototyping']
 .navbar-collapse .navbar-nav.navbar-left:first-child > li:first-child a
   border-radius: 0px
 
-.navbar-collapse
-  background-color: white
+.navbar-default .navbar-toggle:hover:before, .navbar-default .navbar-toggle:focus:before
+  color: $brightblue
 
 .label-success
   background-color: $green
@@ -606,6 +680,10 @@ div[id^='section-prototyping']
   font-weight: bold
 
 // media settings
+@media(max-width:1200px)
+  #food-identity
+    height: inherit
+
 @media(max-width:992px)
   div[id^='section']
     h1
@@ -618,6 +696,14 @@ div[id^='section-prototyping']
   .navbar-nav > li > a
     font-size: .93em
 
+
 @media(max-width:768px)
   .navbar-collapse .navbar-nav.navbar-right:last-child
     margin-bottom: 5px
+
+  .navbar-collapse
+    background-color: white
+
+  .navbar-default .navbar-nav > li > a
+    -webkit-transition: 0s ease
+    transition: 0s ease
