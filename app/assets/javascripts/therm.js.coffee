@@ -742,7 +742,7 @@ $ ->
       clearTimeout(timeout)
     if (mode == 'MAIN' || mode == 'ADJUSTING-TEMP')
       decreaseTemp()
-      timeout = setTimeout(switchToCurrent, 3000)
+      timeout = setTimeout(switchToCurrent, 1500)
       mode = 'ADJUSTING-TEMP'
       return
     else if (mode == 'HOME-MIN')
@@ -829,7 +829,7 @@ $ ->
       clearTimeout(timeout)
     if (mode == 'MAIN' || mode == 'ADJUSTING-TEMP')
       increaseTemp()
-      timeout = setTimeout(switchToCurrent, 3000)
+      timeout = setTimeout(switchToCurrent, 1500)
       mode = 'ADJUSTING-TEMP'
       return
     else if (mode == 'HOME-MIN')
