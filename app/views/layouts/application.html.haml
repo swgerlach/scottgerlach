@@ -1,7 +1,7 @@
 !!!
 %html
   %head
-    %title Scottgerlach
+    %title Scott W Gerlach's Portfolio
     :javascript
       window.q=[];window.$=function(f){q.push(f)}
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
@@ -10,6 +10,7 @@
     :javascript
       $.each(q,function(index,f){$(f)});
     %meta{'http-equiv'=>"cache-control", :content=>"no-cache"}
+    %meta{'name'=>"viewport", 'content'=>"width=device-width, initial-scale=1"}
   %body
     = render '/layouts/topnav'
     = yield
