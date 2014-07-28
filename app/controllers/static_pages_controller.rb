@@ -9,4 +9,16 @@ class StaticPagesController < ApplicationController
     def work
     end
 
+    def prototyping
+    end
+
+    def research
+    end
+
+    def synthesis
+    end
+
+    def ttf
+    end
+
 end

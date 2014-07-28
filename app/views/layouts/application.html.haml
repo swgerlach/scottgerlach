@@ -11,7 +11,7 @@
       $.each(q,function(index,f){$(f)});
     %meta{'http-equiv'=>"cache-control", :content=>"no-cache"}
   %body
-    = render '/layouts/topnav'
+    = render '/layouts/topnav' unless params[:action] == 'ttf'
     = yield
     = render '/layouts/footer'
     :javascript

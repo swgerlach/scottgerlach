@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get 'research' => 'static_pages#research'
   get 'synthesis' => 'static_pages#synthesis'
   get 'prototyping' => 'static_pages#prototyping'
+  get 'ttf' => 'static_pages#ttf'
 
   # This line mounts Monologue's routes at the root of your application.
   # This means, any requests to URLs such as /my-post, will go to Monologue::PostsController.
