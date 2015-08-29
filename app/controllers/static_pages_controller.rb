@@ -18,7 +18,4 @@ class StaticPagesController < ApplicationController
     def synthesis
     end
 
-    def ttf
-    end
-
 end
