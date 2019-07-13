@@ -6,7 +6,10 @@ gem 'rails', '4.2.8'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.3.6', group: :development
 
-gem 'pg',   group: :production
+group :production do
+  gem 'pg'
+end
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
