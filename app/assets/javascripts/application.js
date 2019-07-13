@@ -12,8 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require jquery.ui.all
+//= require jquery-ui
 //= require jquery.transit.min
-//= require bootstrap
+//= require bootstrap-sprockets
 //= require svg
 //= require_tree .

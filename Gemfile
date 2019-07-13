@@ -2,9 +2,9 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.1'
+gem 'rails', '4.2.8'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', group: :development
+gem 'sqlite3', '~> 1.3.6', group: :development
 
 gem 'pg',   group: :production
 # Use SCSS for stylesheets
@@ -45,7 +45,7 @@ gem 'rails_12factor', group: :production
 gem 'haml'
 
 # Use bootstrap
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '~> 3.4.1'
 
 # Use skrollr
 gem 'skrollr-rails'
